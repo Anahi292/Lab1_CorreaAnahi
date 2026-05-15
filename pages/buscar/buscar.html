@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Buscar </title>
+</head>
+
+<body style="background-color: rgb(217, 194, 240);">
+
+    <header>
+        <h1 style="text-align: center; background-color: rgb(180, 135, 237);"> Buscar</h1>
+    </header>
+
+    <nav>
+        <ul style="font-family: Arial, Helvetica, sans-serif;">
+            <li><a href="../../index.html"> Inicio </a></li>
+            <li><a href="../sobreMi/sobreMi.html"> Sobre mí </a></li>
+            <li><a href="../objetivos/objetivos.html"> Objetivos </a></li>
+            <li><a href="../intereses/intereses.html"> Intereses </a></li>
+            <li><a href="../universidad/universidad.html"> Universidad </a></li>
+            <li><a href="../contacto/contacto.html"> Contacto </a></li>
+            <li><a href="../buscar/buscar.html"> Buscar </a></li>
+            <li><a href="../formulario/formulario.html"> Formulario </a>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="formulario-busqueda">
+            <h2 style="color: rgb(83, 12, 168); font-size: 30px;"> Formulario de búsqueda </h2>
+
+            <form method="GET" action="buscar.html">
+
+                <div>
+                    <label for="tema"> Tema: </label>
+                    <input type="text" id="tema" name="tema" placeholder="escribe algo"><br><br>
+                </div>
+
+
+                <div>
+                    <label for="clave"> Contraseña: </label>
+                    <input type="password" id="clave" name="clave" placeholder="obligatorio"> <br><br>
+                </div>
+
+                <div>
+                    <label for="correo"> Correo electrónico </label>
+                    <input type="email" id="correo" name="correo"><br><br>
+                </div>
+
+                <div>
+                    <label for="edad"> Edad </label>
+                    <input type="number" id="edad" name="edad" min="15" max="30"><br><br>
+                </div>
+
+                <div>
+                    <label for="fecha"> Fecha </label><br><br>
+                    <input type="date" id="fecha" name="fecha">
+                </div>
+
+                <div>
+                    <p> Intereses </p>
+                    <label><input type="checkbox" name="interes" value="html"> HTML </label>
+                    <label><input type="checkbox" name="interes" value="anime"> Anime </label>
+                    <label><input type="checkbox" name="interes" value="peliculas"> Películas </label>
+                </div>
+
+                <div>
+                    <label for="color"> Color favorito </label>
+                    <input type="color" id="color" name="color">
+                </div>
+
+                <div>
+                    <label for="comentario"> Comentarios </label><br>
+                    <textarea id="comentario" name="comentario" rows="4" cols="40"></textarea>
+                </div>
+
+                <div>
+                    <button type="submit"> Enviar </button>
+                    <button type="reset"> Limpiar </button> <br><br>
+                </div>
+
+                <div>
+                    <label for="materia"> Materia: </label> <br>
+                    <input type="asignatura" id="materia" name="materia" placeholder="Ingrese la materia"><br><br>
+                    <label for="fechama"> Fecha que recibe la materia: </label> <br>
+                    <input type="date" id="fechama" name="fecha"> <br><br>
+                    <label for="hora"> Hora: </label><br>
+                    <input type="time" id="hora" name="hora"> <br> <br>
+                    <button type="submit"> ENVIAR </button>
+                    <button type="reset"> LIMPIAR </button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p
+            style="background-color: rgb(180, 135, 237); text-align: center; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+            <i> Creado por Anahi Correa - Clase de Fundamentos Web </i> </p>
+    </footer>
+
+</body>
+
+</html>
