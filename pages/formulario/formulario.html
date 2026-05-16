@@ -6,12 +6,12 @@
     <title> Formularios </title>
 </head>
 
-<body>
+<body>    
 
     <header>
         <h1
             style="text-align: center; background-color: rgb(184, 230, 216); font-family: Georgia, 'Times New Roman', Times, serif;">
-            Formularios </h1>
+            Formularios <br><br> PLATAFORMA DE CURSOS ONLINE</h1>
     </header>
 
     <nav>
@@ -22,32 +22,43 @@
             <li><a href="../intereses/intereses.html"> Intereses </a></li>
             <li><a href="../universidad/universidad.html"> Universidad </a></li>
             <li><a href="../contacto/contacto.html"> Contacto </a></li>
-            <li><a href="../buscar/buscar.html"> Buscar </a></li>
+            <li><a href="../buscar/buscar.html"> Buscar </a></li><br>
+            <label name="formulario" style="font-size: 20px;"><b>FORMULARIOS </b> </label><br><br>
+
             <li><a href="../formulario/formulario.html"> Formulario </a>
+            <li><a href="../email/email.html"> Email - Contacto </a></li>
+            <li><a href="../login/login.html"> Login </a></li>
+            <li><a href="../sugerencia/sugerencia.html"> Sugerencia </a></li>
+
             </li>
         </ul>
     </nav>
     <main>
         <section id="formulario-InputTex">
-            <form method="get" action="formulario.html"></form>
-            <fieldset style="border: 2px solid;">
-                <legend><b> Formulario Input Text </b></legend><br>
-                <label for="nombre"> Nombres: </label>
-                <input type="text" name="nombre" id="nombre" placeholder="Ingrese sus nombres"><br><br>
-                <label for="apellido"> Apellidos: </label>
-                <input type="text" name="apellido" id="apellido" placeholder="Ingrese sus apellidos "><br><br>
-                <label for="curso"> Curso que quiere buscar: </label>
-                <input type="text" name="curso" id="curso" placeholder="Ingrese el curso a buscar"><br><br>
-                <button type="submit"> BUSCAR </button>
-                <button type="reset"> LIMPIAR </button>
-            </fieldset><br>
+            <form method="get" action="../buscar/buscar.html">
+                <fieldset style="border: 2px solid;">
+                    <legend style="color: rgb(9, 124, 86); font-size: 27px ;"><b> Formulario Input Text </b></legend>
+                    <br>
+                    <label for="nombre"> Nombres: </label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Ingrese sus nombres" required><br><br>
+                    <label for="apellido"> Apellidos: </label>
+                    <input type="text" name="apellido" id="apellido" placeholder="Ingrese sus apellidos"
+                        required><br><br>
+                    <label for="celular"> Celular: </label>
+                    <input type="text" name="celular" id="celular" placeholder="Maximo 10 dígitos" minlength="10"
+                        maxlength="10"><br><br>
+                    <label for="curso"> Curso que quiere buscar: </label>
+                    <input type="text" name="curso" id="curso" placeholder="Ingrese el curso a buscar" required><br><br>
+                    <button type="submit"> BUSCAR </button>
+                    <button type="reset"> LIMPIAR </button>
+                </fieldset><br>
             </form>
         </section>
 
         <section id="formulario-Select">
-            <form method="get" action="formulario.html">
+            <form method="get" action="../buscar/buscar.html">
                 <fieldset style="border: 2px solid;">
-                    <legend> <b> Formulario Select </b></legend><br>
+                    <legend style="color: rgb(9, 124, 86); font-size: 27px ;"> <b> Formulario Select </b></legend><br>
 
                     <label form="categoria"> Categoria del curso: </label>
                     <select name="categoria" id="categoria">
@@ -55,7 +66,7 @@
                         <option value="programacion"> Programación </option>
                         <option value="diseño"> Diseño </option>
                         <option value="Base de Datos"> Base de datos </option>
-                        <option value="Redes"> Redes  </option>
+                        <option value="Redes"> Redes </option>
                     </select> <br><br>
 
                     <label for="horario"> Horario Disponible: </label>
@@ -65,12 +76,61 @@
                         <option value="noche"> Noche </option>
                     </select><br><br>
 
-                    <label for="modalidad"> Modalidad:  </label>
+                    <label for="modalidad"> Modalidad: </label>
+                    <select name="modalidad" id="modalidad">
+                        <option value="virtual"> Virtual </option>
+                        <option value="presencial"> Presencial</option>
+                        <option value="hibrida"> Híbrida </option>
+                    </select><br><br>
 
-                </fieldset> 
+                    <button type="submit"> ENVIAR</button>
+                    <button type="reset"> ELIMINAR</button>
+                </fieldset>
+            </form>
+        </section><br>
+
+        <section id="formulario-checkbox">
+            <form method="get" action="../buscar/buscar.html">
+                <fieldset style="border: 2px solid;">
+                    <legend style="color: rgb(9, 124, 86); font-size: 27px ;"> <b> Formulario Checkbox </b></legend>
+                    <label for="intereses"> Intereses Tecnológicos: </label><br>
+                    <input type="checkbox"> HTML <br>
+                    <input type="checkbox"> CSS <br>
+                    <input type="checkbox"> JavaScript <br>
+                    <input type="checkbox"> Python <br>
+                    <input type="checkbox"> Bases de datos <br>
+                    <input type="checkbox"> Ciberseguridad <br><br>
+
+                    <label for="herramientas"> Herramientas que conoce: </label><br>
+                    <input type="checkbox"> Visual Studio Code <br>
+                    <input type="checkbox"> GitHub <br>
+                    <input type="checkbox"> Figma <br>
+                    <input type="checkbox"> Canva <br><br>
+
+                    <button type="submit"> ENVIAR</button>
+                    <button type="reset"> ELIMINAR </button>
+                </fieldset><br>
             </form>
 
         </section>
+
+        <section>
+            <form method="get" action="../buscar/buscar.html">
+                <fieldset style="border: 2px solid;">
+                    <legend style="color: rgb(9, 124, 86); font-size: 27px ;"> <b> Formulario Calendario </b></legend>
+                    <label form="reserva"> Reservación del curso </label> <br><br>
+                    <label form="fechains"> Fecha de inscripción: </label>
+                    <input type="date"> <br><br>
+                    <label form="fechainicio"> Fecha de inicio: </label>
+                    <input type="date"><br><br>
+                    <button type="submit"> ENVIAR</button>
+                    <button type="reset"> ELIMINAR </button>
+
+                </fieldset>
+            </form>
+        </section>
+
+
 
     </main>
     <footer>
@@ -80,3 +140,5 @@
         </p>
     </footer>
 </body>
+
+</html>
